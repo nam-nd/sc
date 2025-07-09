@@ -1,8 +1,7 @@
 module ControlUnit (
     input [6:0] op,
     output RegWrite, ALUSrc, ALUSrc_pc, MemWrite, MemRead, Branch, Jump,
-    output [1:0] ALUOp,
-    output [1:0] ResultSrc,
+    output [1:0] ALUOp, ResultSrc,
     output reg [2:0] imm_sel
 );
     assign RegWrite = (op == 7'b0000011 || op == 7'b0110011 || op == 7'b0010011 || 

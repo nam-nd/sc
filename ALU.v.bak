@@ -6,7 +6,7 @@ module ALU (
     wire [31:0] sum;
     assign sum = (!ALUControl[0]) ? A + B : (A + (~B + 1));
     always @(*) begin
-        case (ALU_Control)
+        case (ALUControl)
             4'b0000, 4'b0001: alu_out = sum; // ADD, SUB
             4'b0010: alu_out = A & B; // AND
             4'b0011: alu_out = A | B; // OR

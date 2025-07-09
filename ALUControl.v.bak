@@ -23,7 +23,7 @@ module ALUControl (
                     default: ALU_Control = 4'b0000;
                 endcase
             end
-            default: ALU_Control = 4'b0000;
+            default: ALUControl = 4'b0000;
         endcase
     end
 endmodule

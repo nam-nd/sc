@@ -108,7 +108,7 @@ module RISCV_Single_Cycle (
     ALU ALU_inst (
         .A(A),
         .B(B),
-        .ALU_Control(ALU_Control),
+        .ALU_Control(ALUControl),
         .alu_out(alu_out)
     );
 
