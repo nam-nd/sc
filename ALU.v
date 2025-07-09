@@ -4,7 +4,7 @@ module ALU (
     output reg [31:0] alu_out
 );
     wire [31:0] sum;
-    assign sum = (!ALUControl[0]) ? A + B : (A + (~B + 1));
+    assign sum = (!ALU_Control[0]) ? A + B : (A + (~B + 1));
     always @(*) begin
         case (ALU_Control)
             4'b0000, 4'b0001: alu_out = sum; // ADD, SUB

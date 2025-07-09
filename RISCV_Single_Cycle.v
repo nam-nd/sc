@@ -60,7 +60,7 @@ module RISCV_Single_Cycle (
     );
 
     IMEM IMEM_inst (
-        .addr(PC_Out[31:2]),
+        .address(PC_Out[31:2]),
         .instruction(instruction)
     );
 
